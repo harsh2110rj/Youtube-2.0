@@ -19,7 +19,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 public class YoutubeActivity extends YouTubeBaseActivity implements
         YouTubePlayer.OnInitializedListener {
     private static final String TAG = "YoutubeActivity";
-static final String GOOGLE_API_KEY="AIzaSyCZYYJwmcmnsmZLIzxXnFeLduOqtIyN16U";
+static final String GOOGLE_API_KEY="//Enter the Google API Key Here//";
 static final String YOUTUBE_VIDEO_ID="kY22NSBwV_s";
 static final String YOUTUBE_PLAYLIST="PLXtTjtWmQhg3aTiE0y_iO_DRlKtTiv519";
     @Override
@@ -50,7 +50,7 @@ static final String YOUTUBE_PLAYLIST="PLXtTjtWmQhg3aTiE0y_iO_DRlKtTiv519";
         Toast.makeText(this,"Initialized Youtube Player successfully",Toast.LENGTH_LONG);
 
         if(!wasRestored)
-        {youTubePlayer.cueVideo(YOUTUBE_VIDEO_ID);}
+        {youTubePlayer.cueVideo(YOUTUBE_VIDEO_ID);youTubePlayer.play();}
         
 
 
